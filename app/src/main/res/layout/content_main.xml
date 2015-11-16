@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_main" tools:context=".main">
+<EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:hint="Local"
+    android:inputType="textCapWords"
+    android:id="@+id/textolocal"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Global"
+        android:inputType="textCapWords"
+        android:layout_below="@id/textolocal"
+        android:id="@+id/textoglobal"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textoglobal"
+        android:id="@+id/botongardar"
+        android:text="Guardar datos"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/botongardar"
+        android:id="@+id/botoncargar"
+        android:text="Cargar datos"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/botoncargar"
+        android:id="@+id/botonlanzar"
+        android:text="Lanzar Activity"/>
+</RelativeLayout>
